@@ -13,11 +13,17 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"> 
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="images/logo.png">
     <title> Café Especial </title>
 </head>
 <body>
+
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=11999999999&text=oi,%20tudo%20bem?"> 
+        <div class="rwb-tooltip">Fale Conosco</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"> 
+    </a>
 
     <header class="cabecalho-invisivel"></header>
 
@@ -29,6 +35,10 @@
             <nav>
                 <a href=".container-inicio">
                     Início
+                    <span></span>
+                </a>
+                <a href=".container-sobre-nos">
+                    Sobre nós
                     <span></span>
                 </a>
                 <a href=".container-produtores">
@@ -81,6 +91,10 @@
                 Início
                 <span></span>
             </a>
+            <a href=".container-sobre-nos">
+                Sobre nós
+                <span></span>
+            </a>
             <a href=".container-produtores">
                 Produtores
                 <span></span>
@@ -119,6 +133,362 @@
                     <a href=".container-contatos">
                         Ver contatos
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-sobre-nos">
+        <div>
+            <div class="sobre-nos">
+                <div class="titulo">
+                    <img src="images/xicara.png" alt="">
+                    <h2>
+                        Sobre Nós
+                    </h2>
+                </div>
+                <p>
+                    Não somos uma cafeteria e não vendemos café pronto. Nossa missão 
+                    é ser a vitrine virtual para esses produtores talentosos, 
+                    proporcionando-lhes uma oportunidade única de apresentar 
+                    seus cafés especiais ao público.
+                </p>
+                <p>
+                    Celebramos a dedicação desses produtores em cada grão cultivado e 
+                    incentivamos os amantes do café a conhecerem a história e a jornada 
+                    de cada produtor.
+                </p>
+                <p>
+                    Seja você um pequeno produtor com um café excepcional ou um amante do 
+                    café que busca novas descobertas, a cafeespecial.com.br é o lugar 
+                    perfeito para encontrar e compartilhar essa paixão
+                </p>
+                <p>
+                    Explore a variedade de cafés especiais brasileiros e descubra os tesouros 
+                    que cada região tem a oferecer. Nossa plataforma é um espaço de encontros, 
+                    onde produtores e consumidores se conectam e criam laços em torno da admiração 
+                    comum pelo café especial. Junte-se a nós nesta jornada de sabores únicos, 
+                    aromas envolventes e histórias inspiradoras.
+                </p>
+                <p>
+                    Desperte sua paixão pelo café especial com a cafeespecial.com.br, o 
+                    lugar onde o café especial feito por brasileiros ganha vida e onde os 
+                    produtores ganham visibilidade merecida. Seja parte desse movimento 
+                    que celebra a dedicação e o sabor de cada xícara, uma experiência 
+                    que vai além da bebida e cria conexões verdadeiras em cada gole.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-produtores">
+        <div>
+            <div>
+                <h2 class="titulo">
+                    <img src="images/lupa.png" alt="">
+                    Filtre os produtores por estado!
+                </h2>
+
+                <form class="produtores-form">
+                    <select name="estado">
+                        <option value="acre">Acre</option>
+                        <option value="alagoas">Alagoas</option>
+                        <option value="amapa">Amapá</option>
+                        <option value="amazonas">Amazonas</option>
+                        <option value="bahia">Bahia</option>
+                        <option value="ceara">Ceará</option>
+                        <option value="distrito_federal">Distrito Federal</option>
+                        <option value="espirito_santo">Espírito Santo</option>
+                        <option value="goias">Goiás</option>
+                        <option value="maranhao">Maranhão</option>
+                        <option value="mato_grosso">Mato Grosso</option>
+                        <option value="mato_grosso_do_sul">Mato Grosso do Sul</option>
+                        <option value="minas_gerais">Minas Gerais</option>
+                        <option value="para">Pará</option>
+                        <option value="paraiba">Paraíba</option>
+                        <option value="parana">Paraná</option>
+                        <option value="pernambuco">Pernambuco</option>
+                        <option value="piaui">Piauí</option>
+                        <option value="rio_de_janeiro">Rio de Janeiro</option>
+                        <option value="rio_grande_do_norte">Rio Grande do Norte</option>
+                        <option value="rio_grande_do_sul">Rio Grande do Sul</option>
+                        <option value="rondonia">Rondônia</option>
+                        <option value="roraima">Roraima</option>
+                        <option value="santa_catarina">Santa Catarina</option>
+                        <option value="sao_paulo">São Paulo</option>
+                        <option value="sergipe">Sergipe</option>
+                        <option value="tocantins">Tocantins</option>
+                    </select>
+                    <input type="submit" value="Filtrar">
+                </form>
+
+                <h2 class="titulo">
+                    <img src="images/graos.png" alt="">
+                    Produtores mais requisitados
+                </h2>
+                <div class="produtores">
+
+                    <div class="produtor">
+                        <span>
+                            Bahia
+                        </span>
+                        <img src="images/fundo4.jpg" alt="">
+                        <div>
+                            <h3>
+                                Produtor 123
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Possimus velit ex corrupti soluta eaque ab dolorum unde odit dolorem qui 
+                                fugiat, quasi nam est, quos quae commodi error dolore! Nobis.
+                            </p>
+                            <div class="produtor-redes-sociais">
+                                <a href="">
+                                    <img src="images/whatsapp.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/instagram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produtor">
+                        <span>
+                            Bahia
+                        </span>
+                        <img src="images/fundo4.jpg" alt="">
+                        <div>
+                            <h3>
+                                Produtor 123
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Possimus velit ex corrupti soluta eaque ab dolorum unde odit dolorem qui 
+                                fugiat, quasi nam est, quos quae commodi error dolore! Nobis.
+                            </p>
+                            <div class="produtor-redes-sociais">
+                                <a href="">
+                                    <img src="images/whatsapp.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/instagram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produtor">
+                        <span>
+                            Bahia
+                        </span>
+                        <img src="images/fundo4.jpg" alt="">
+                        <div>
+                            <h3>
+                                Produtor 123
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Possimus velit ex corrupti soluta eaque ab dolorum unde odit dolorem qui 
+                                fugiat, quasi nam est, quos quae commodi error dolore! Nobis.
+                            </p>
+                            <div class="produtor-redes-sociais">
+                                <a href="">
+                                    <img src="images/whatsapp.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/instagram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-cafeterias">
+        <div>
+            <h2 class="titulo">
+                <img src="images/lupa.png" alt="">
+                Filtre as cafeterias por estado!
+            </h2>
+
+            <form class="cafeterias-form">
+                <select name="estado">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="distrito_federal">Distrito Federal</option>
+                    <option value="espirito_santo">Espírito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="mato_grosso">Mato Grosso</option>
+                    <option value="mato_grosso_do_sul">Mato Grosso do Sul</option>
+                    <option value="minas_gerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="rio_de_janeiro">Rio de Janeiro</option>
+                    <option value="rio_grande_do_norte">Rio Grande do Norte</option>
+                    <option value="rio_grande_do_sul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santa_catarina">Santa Catarina</option>
+                    <option value="sao_paulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                </select>
+                <input type="submit" value="Filtrar">
+            </form>
+
+            <h2 class="titulo">
+                <img src="images/cafeteria.png" alt="">
+                As cafeterias mais requisitadas
+            </h2>
+            <div class="cafeterias">
+
+                <div class="cafeteria">
+                    <span>
+                        Bahia
+                    </span>
+                    <img src="images/fundo4.jpg" alt="">
+                    <div>
+                        <h3>
+                            Produtor 123
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Possimus velit ex corrupti soluta eaque ab dolorum unde odit dolorem qui 
+                            fugiat, quasi nam est, quos quae commodi error dolore! Nobis.
+                        </p>
+                        <div class="cafeteria-redes-sociais">
+                            <a href="">
+                                <img src="images/whatsapp.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="images/instagram.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cafeteria">
+                    <span>
+                        Bahia
+                    </span>
+                    <img src="images/fundo4.jpg" alt="">
+                    <div>
+                        <h3>
+                            Produtor 123
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Possimus velit ex corrupti soluta eaque ab dolorum unde odit dolorem qui 
+                            fugiat, quasi nam est, quos quae commodi error dolore! Nobis.
+                        </p>
+                        <div class="cafeteria-redes-sociais">
+                            <a href="">
+                                <img src="images/whatsapp.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="images/instagram.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cafeteria">
+                    <span>
+                        Bahia
+                    </span>
+                    <img src="images/fundo4.jpg" alt="">
+                    <div>
+                        <h3>
+                            Produtor 123
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Possimus velit ex corrupti soluta eaque ab dolorum unde odit dolorem qui 
+                            fugiat, quasi nam est, quos quae commodi error dolore! Nobis.
+                        </p>
+                        <div class="cafeteria-redes-sociais">
+                            <a href="">
+                                <img src="images/whatsapp.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="images/instagram.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-contatos">
+        <div>
+            <div>
+                <h2 class="titulo">
+                    <img src="images/contatos.png" alt="">
+                    Contatos
+                </h2>
+                <h3>
+                    <span>Produtor</span>
+                    , você que queira fazer parte do site, entre contato para lhe 
+                    mandarmos as propostas e valores deste serviço único.
+                </h3>
+                <h3>
+                    As <span>cafeterias</span> que queiram participar deste site, 
+                    favor entrar em contato para lhe apresentarmos a ideia e a proposta.
+                </h3>
+                <h3>
+                    Teremos o enorme prazer de ter você que dá palestras e cursos na 
+                    área de café especial em nosso site. Entre em contato e lhe daremos as explicações.
+                </h3>
+                <div class="contatos">
+                    <div class="contato">
+                        <a href="">
+                            <img src="images/whatsapp.png" alt="">
+                        </a>
+                        <h4>
+                            Entre em contato comigo <br> pelo whatsapp
+                        </h4>
+                        <a href="">
+                            Enviar mensagem
+                        </a>
+                    </div>
+
+                    <div class="contato">
+                        <a href="">
+                            <img src="images/instagram.png" alt="">
+                        </a>
+                        <h4>
+                            Entre em contato conosco <br> pelo instagram
+                        </h4>
+                        <a href="">
+                            Enviar mensagem
+                        </a>
+                    </div>
+
+                    <div class="contato">
+                        <a href="">
+                            <img src="images/gmail.png" alt="">
+                        </a>
+                        <h4>
+                            Entre em contato conosco <br> pelo e-mail
+                        </h4>
+                        <a href="mailto:email@gmail.com">
+                            Enviar e-mail
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

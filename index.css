@@ -25,6 +25,12 @@ body{
     --cor-secundaria: #c69e4f;
 }
 
+.rwb-tooltip{
+    background: var(--cor-branca);
+    color: var(--cor-preta);
+    font-weight: bold;
+}
+
 /* Cabecalho - Início */
 
 .cabecalho-invisivel{
@@ -172,12 +178,13 @@ body{
 
 /* Cabecalho - Fim */
 
-/* Container - Início */
+/* Container Home - Início */
 
 .container-inicio{
     width: 100%;
     background: url('images/fundo1.jpg') center;
     background-size: cover;
+    border-bottom: 0.3rem solid var(--cor-secundaria);
 }
 
 .container-inicio>div{
@@ -231,7 +238,304 @@ body{
     transform: scale(1.05);
 }
 
-/* Container - Fim */
+/* Container Home - Fim */
+
+/* Container Sobre Nós - Início */
+
+.container-sobre-nos{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(142,99,95,1) 27%, rgba(61,39,37,1) 69%);
+    border-bottom: 0.3rem solid var(--cor-secundaria);
+}
+
+.container-sobre-nos>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.titulo img{
+    max-width: 7rem;
+}
+
+.titulo{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 0 0 0.7rem 0;
+    color: var(--cor-secundaria);
+}
+
+.sobre-nos p{
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+.sobre-nos{
+    color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    max-width: 60rem;
+}
+
+/* Container Sobre Nós - Fim */
+
+/* Container Produtores e Cafeterias - Início */
+
+.container-cafeterias{
+    width: 100%;
+    padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(142,99,95,1) 27%, rgba(61,39,37,1) 69%);
+    border-bottom: 0.3rem solid var(--cor-secundaria);
+}
+
+.container-cafeterias>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.container-produtores{
+    width: 100%;
+    background: url('images/fundo2.jpg') center;
+    background-size: cover;
+    border-bottom: 0.3rem solid var(--cor-secundaria);
+}
+
+.container-produtores>div{
+    width: 100%;
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container-produtores>div>div{
+    width: 90%;
+    padding: 2rem 0;
+    min-height: 87vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtores-form, .cafeterias-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.produtores-form select, .cafeterias-form select{
+    border: 0.2rem solid var(--cor-secundaria);
+    font-weight: bold;
+    background: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.produtores-form input, .cafeterias-form input{
+    border-radius: 1rem;
+    cursor: pointer;
+    background: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    transition: .3s;
+}
+
+.produtores-form input:hover, .cafeterias-form input:hover{
+    transform: scale(1.05);
+}
+
+.produtores-form option, .cafeterias-form option{
+    background: var(--cor-principal);
+}
+
+.produtores, .cafeterias{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtor, .cafeteria{
+    max-width: 50rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: var(--cor-secundaria);
+    background: var(--cor-principal);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 3rem var(--cor-secundaria);
+    position: relative;
+}
+
+.produtor span, .cafeteria span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6rem;
+    border-top-right-radius: 2rem;
+    text-align: center;
+    height: 2rem;
+    background: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.produtor h3, .cafeteria h3{
+    font-size: 3rem;
+}
+
+.produtor>div, .cafeteria>div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.produtor>div p, .cafeteria>div p{
+    text-indent: 1rem;
+    text-align: justify;
+}
+
+.produtor-redes-sociais, .cafeteria-redes-sociais{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.produtor-redes-sociais img, .cafeteria-redes-sociais img{
+    max-width: 5rem;
+}
+
+.produtor-redes-sociais a, .cafeteria-redes-sociais a{
+    transition: .3s;
+}
+
+.produtor-redes-sociais a:hover, .cafeteria-redes-sociais a:hover{
+    transform: scale(1.05);
+}
+
+.produtor>img, .cafeteria>img{
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+/* Container Produtores e Cafeterias - Fim */
+
+/* Container Contatos - Início */
+
+.container-contatos{
+    width: 100%;
+    background: url('images/fundo4.jpg') center;
+    background-size: cover;
+    border-bottom: 0.3rem solid var(--cor-secundaria);
+}
+
+.container-contatos>div{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.container-contatos>div>div{
+    width: 90%;
+    padding: 2rem 0;
+    min-height: 87vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.container-contatos h3{
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.container-contatos h3 span{
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+    border-radius: 1rem;
+}
+
+.contatos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 4rem;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    max-width: 45rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+}
+
+.contato img{
+    max-width: 10rem;
+}
+
+.contato a{
+    transition: .3s;
+}
+
+.contato a:last-child{
+    background: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.contato a:hover{
+    transform: scale(1.05);
+}
+
+/* Container Contatos - Fim */
 
 @media(max-width: 950px){
     header.container-oculto-desocultar{
@@ -252,9 +556,7 @@ body{
     .home p{
         color: var(--cor-secundaria);
     }
-}
 
-@media(max-width: 765px){
     .cabecalho, .cabecalho-mobile{
         display: none;
     }
@@ -262,5 +564,9 @@ body{
     .cabecalho-mobile{
         display: block;
     }
+}
+
+@media(max-width: 765px){
+    
 }
 
